@@ -1,0 +1,121 @@
+.container { padding: 10px 30px; }
+.loader{
+	width:70px;
+	height:70px;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin:-35px 0px 0px -35px;
+	opacity:0.7;
+	z-index:1000;
+	background:#fff url(loader.gif) no-repeat center center;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	-moz-box-shadow:0px 0px 5px #999;
+	-webkit-box-shadow:0px 0px 5px #999;
+	box-shadow:0px 0px 5px #999;
+}
+.ps_container{
+	display:none;
+	width:680px;
+	height:500px;
+	margin:20px 0 0px 40px;
+	position:relative;
+}
+.ps_image_wrapper{
+	width:640px;
+	height:425px;
+	overflow:hidden;
+	position:relative;
+	margin:0 auto;
+	-moz-box-shadow:0px 0px 5px #999;
+	-webkit-box-shadow:0px 0px 5px #999;
+	box-shadow:0px 0px 5px #999;
+}
+.ps_image_wrapper img{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.ps_prev,
+.ps_next{
+	width:30px;
+	height:59px;
+	position:absolute;
+	top:50%;
+	margin-top:-40px;
+	cursor:pointer;
+	opacity:0.5;
+}
+.ps_prev{
+	background:transparent url(prev.png) no-repeat top center;
+	left:-50px;
+}
+.ps_next{
+	background:transparent url(next.png) no-repeat top center;
+	right:-50px;
+}
+.ps_prev:hover,
+.ps_next:hover{
+	opacity:0.9;
+}
+ul.ps_nav{
+	list-style:none;
+	margin:0;
+	padding:0;
+	width:200px;
+	position:absolute;
+	height:11px;
+	left:50%;
+	margin-left:-100px;
+	top:440px;
+}
+.ps_nav a:hover { border: none !important; }
+ul.ps_nav li{
+	float:left;
+}
+ul.ps_nav li a{
+	display:block;
+	text-indent:-9000px;
+	width:11px;
+	height:11px;
+	outline:0;
+	padding:0px;
+	margin-right:5px;
+	background:transparent url(dot.png) no-repeat top center;
+}
+ul.ps_nav li a:hover,ul.ps_nav li.selected a{
+	background-position:left -11px;
+}
+ul.ps_nav li.ps_preview{
+	display:none;
+	width:85px;
+	height:91px;
+	top:-95px;
+	left:-382px; 
+	position:absolute;
+}
+ul.ps_nav li.ps_preview span{
+	background:transparent url(triangle.png) no-repeat top center;
+	width:15px;
+	height:6px;
+	position:absolute;
+	top:85px;
+	left:34px;
+}
+.ps_preview_wrapper{
+	width:75px;
+	height:75px;
+	border:5px solid #fff;
+	overflow:hidden;
+	position:relative;
+	-moz-box-shadow:0px 0px 5px #999;
+	-webkit-box-shadow:0px 0px 5px #999;
+	box-shadow:0px 0px 5px #999;
+}
+.ps_preview_wrapper img{
+	position:absolute;
+	top:0px;
+	left:0px;
+}
